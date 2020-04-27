@@ -18,6 +18,7 @@ body
 
 .clock
 {
+    max-width: 100%;
     width: 350px;
     height: 350px;
     /*padding-left: 400px;
@@ -126,6 +127,7 @@ body
 
 .container .row .text h2
 {
+    max-width: 100%;
     font-size: 40px;
     font-weight: 600;
     padding-top: 128px;
