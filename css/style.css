@@ -23,8 +23,8 @@ body
     height: 350px;
     /*padding-left: 400px;
     padding-right: 400px;*/
-    margin-left: 50px;
-    margin-right: 110px;
+    margin-left: 90px;
+    margin-right: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,10 +127,13 @@ body
 
 .container .row .text h2
 {
+    text-align: center;
     max-width: 100%;
     font-size: 40px;
     font-weight: 600;
     padding-top: 128px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .container .row .text h2 i
 {
