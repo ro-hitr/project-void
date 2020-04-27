@@ -12,13 +12,24 @@ if (isMobile)
             'width': '60vw',
             'height': '60vw',
             'margin-left': '20vw',
-            'margin-right': '20vw',
-            'height': 'width'
+            'margin-right': '20vw'
         });
     });
 }
-
-/**else 
+/*
+else 
 {
-	element.innerHTML = "You are using Desktop";
+	$(document).ready(function(){
+        'use strict';
+        $('.text').css({
+            'font-size':'60px',
+            'width':'100%'
+        });
+        $('.clock').css({
+            'width': '60vmin',
+            'height': '60vmin',
+            'margin-left': '20vmin',
+            'margin-right': '20vmin'
+        });
+    });
 }*/
