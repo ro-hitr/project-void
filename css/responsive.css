@@ -15,3 +15,21 @@
         height: width;
     }
 }
+
+@media only screen and (max-height: 640px)
+{
+    .text
+    {
+        width: 100%;
+        /*padding-top: 10vh;*/
+        text-align: center;
+    }
+    .clock
+    {
+        width: 60vh;
+        height: 60vh;
+        margin-left: 20vh;
+        margin-right: 20vh;
+        height: width;
+    }
+}
