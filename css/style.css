@@ -4,7 +4,8 @@
     box-sizing: border-box;    
 }
 
-body{
+body
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,19 +16,14 @@ body{
     overflow: hidden;
 }
 
-.container{
-    position: relative;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: minmax(300px, auto);
-    margin: 40px;
-    grid-auto-flow: dense;
-}
-
-.clock{
+.clock
+{
     width: 350px;
     height: 350px;
+    /*padding-left: 400px;
+    padding-right: 400px;*/
+    margin-left: 50px;
+    margin-right: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +36,8 @@ body{
                 0 -15px 15px rgba(0,0,0,.05),
                 inset 0 -15px 15px rgba(0,0,0,.05);
 }
-.clock:before{
+.clock:before
+{
     content: '';
     position: absolute;
     width: 15px;
@@ -125,4 +122,15 @@ body{
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
+}
+
+.container .row .text h2
+{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 128px;
+}
+.container .row .text h2 i
+{
+    color: #ff105e;
 }
