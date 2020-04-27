@@ -15,7 +15,9 @@ if (isMobile)
             'margin-right': '20vw',
             'height': 'width'
         });
-} 
+    });
+}
+
 /**else 
 {
 	element.innerHTML = "You are using Desktop";
