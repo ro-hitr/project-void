@@ -3,14 +3,15 @@
     .text
     {
         width: 100%;
-        padding-top: 60px;
+        /*padding-top: 10vh;*/
         text-align: center;
     }
     .clock
     {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 60vw;
+        height: 60vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
         height: width;
     }
 }
