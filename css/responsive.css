@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px)
+@media (max-width: 768px)
 {
     .text
     {
@@ -16,7 +16,7 @@
     }
 }
 
-@media only screen and (max-height: 640px)
+@media (max-height: 640px)
 {
     .text
     {
