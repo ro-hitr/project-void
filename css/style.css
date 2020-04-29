@@ -34,8 +34,8 @@ body
     height: 500px;
     /*padding-left: 400px;
     padding-right: 400px;*/
-    margin-left: 200px;
-    margin-right: 50px;
+    margin-left: 25vmin;
+    margin-right: 25vmin;
     margin-bottom: 30px;
     /*left: 0%;*/
     display: flex;
