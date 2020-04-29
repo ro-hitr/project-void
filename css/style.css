@@ -14,7 +14,8 @@ body
     background: #091921;
     font-family: 'Red Hat Display', sans-serif;
     color: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container
@@ -97,10 +98,10 @@ body
     /*align-items: center;*/
     position: absolute;
     border-radius: 50%;
-    transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    -webkit-transition: all 0.7s;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
 }
 .hr:before
 {
@@ -140,8 +141,8 @@ body
     font-size: 70px;
     font-weight: 600;
     padding-top: 128px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     line-height: 1.4em;
 }
 .container .row .text h2 a
@@ -161,7 +162,7 @@ body
 .container p
 {
     text-align: center;
-    color: #215e65;
+    color: #6f6f6f;
     font-size: 50px;
     font-weight: 500;
     margin-top: 150px;
@@ -190,7 +191,7 @@ body
     align-items: center;
     padding-top: 47px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
     color: #6f6f6f;
     font-size: 80px;/*or24*/
     border-radius: 50%;
