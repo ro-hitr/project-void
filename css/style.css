@@ -30,8 +30,8 @@ body
 .clock
 {
     /*max-width: 100%;*/
-    width: 500px;
-    height: 500px;
+    width: 50vmin;
+    height: 50vmin;
     /*padding-left: 400px;
     padding-right: 400px;*/
     margin-left: 25vmin;
