@@ -21,6 +21,7 @@ body
 {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -28,13 +29,14 @@ body
 
 .clock
 {
-    max-width: 100%;
-    width: 350px;
-    height: 350px;
+    /*max-width: 100%;*/
+    width: 500px;
+    height: 500px;
     /*padding-left: 400px;
     padding-right: 400px;*/
-    margin-left: 50px;
+    margin-left: 200px;
     margin-right: 50px;
+    margin-bottom: 30px;
     /*left: 0%;*/
     display: flex;
     text-align: center;
@@ -74,18 +76,18 @@ body
 }
 .clock .hour, .hr
 {
-    width: 160px;
-    height: 160px;
+    width: 230px;
+    height: 230px;
 }
 .clock .min, .mn
 {
-    width: 190px;
-    height: 190px;
+    width: 280px;
+    height: 280px;
 }
 .clock .sec, .sc
 {
-    width: 230px;
-    height: 230px;
+    width: 350px;
+    height: 350px;
 }
 
 .hr, .mn, .sc
@@ -104,8 +106,8 @@ body
 {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 80px;
+    width: 12px;
+    height: 120px;
     background: linear-gradient(180deg,#ff105e,#2238ff);
     z-index: 10;
     border-radius: 6px 6px 0 0;
@@ -114,8 +116,8 @@ body
 {
     content: '';
     position: absolute;
-    width: 4px;
-    height: 90px;
+    width: 5px;
+    height: 145px;
     background: #fff;
     z-index: 11;
     border-radius: 6px 6px 0 0;
@@ -124,8 +126,8 @@ body
 {
     content: '';
     position: absolute;
-    width: 2px;
-    height: 150px;
+    width: 3px;
+    height: 180px;
     background: #fff;
     z-index: 12;
     border-radius: 6px 6px 0 0;
@@ -134,8 +136,8 @@ body
 .container .row .text h2
 {
     text-align: center;
-    /*max-width: 100%;*/
-    font-size: 40px;
+    max-width: 100%;
+    font-size: 70px;
     font-weight: 600;
     padding-top: 128px;
     padding-left: 20px;
@@ -158,11 +160,12 @@ body
 
 .container p
 {
+    text-align: center;
     color: #215e65;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-top: 150px;
+    margin-bottom: 40px;
 }
 .container label
 {
@@ -178,18 +181,18 @@ body
 .container label .fa
 {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     background: #091921;
     line-height: 40px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 9px;
+    padding-top: 47px;
     margin-top: 5px;
     margin-bottom: 5px;
     color: #6f6f6f;
-    font-size: 24px;/*or24*/
+    font-size: 80px;/*or24*/
     border-radius: 50%;
     cursor: pointer;
     box-shadow: -1px -1px 3px rgba(255,255,255,.1),
@@ -197,13 +200,13 @@ body
 }
 .container label .fa-check
 {
-    margin-left: 3.2em;
-    margin-right: 0.5em;
+    margin-left: 2em;
+    margin-right: .5em;
 }
 .container label .fa-times
 {
-    margin-right: 3.2em;
-    margin-left: 0.5em;
+    margin-right: 2em;
+    margin-left: .5em;
 }
 .container label .fa:hover
 {
