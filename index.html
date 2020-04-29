@@ -60,22 +60,23 @@
             let hh = day.getHours() * 30;
             let mm = day.getMinutes() * deg;
             let ss = day.getSeconds() * deg;
-            let h = hh, m = mm, s = ss;
 
             hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-            mn.style.transform = `rotateZ(${m}deg)`;
-            sc.style.transform = `rotateZ(${s}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
             
             setInterval(() => {
+                
+                hh = day.getHours() * 30;
+                mm = day.getMinutes() * deg;
+                ss = day.getSeconds() * deg;
+                let m = mm, s = ss;
+                
                 s+=6;
                 if(s%360==0)
                     m+=6;
                 /*if(m%360==0)
                     h+=6;*/
-
-                hh = day.getHours() * 30;
-                mm = day.getMinutes() * deg;
-                ss = day.getSeconds() * deg;
 
                 hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
                 mn.style.transform = `rotateZ(${m}deg)`;
