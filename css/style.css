@@ -155,8 +155,100 @@ body
     overflow: hidden;
     border: 1px;
     border-radius: 50vmin;
-    padding: 2px 15px 8px 14px;
+    padding: 2px 18px 10px 14px;
     background: linear-gradient(90deg,#ff105e,#2238ff);
+}
+
+.ig-img
+{
+    width: 80vw;
+    border-radius: 5%;
+    box-shadow: -1px -1px 3px rgba(255,255,255,.1),
+                2px 2px 18px rgba(0,0,0,.8);
+}
+
+#slider
+{
+    overflow: hidden;
+}
+#slider figure
+{
+    position: relative;
+    width: 700%;
+    margin: 0;
+    animation: 24s slider infinite;
+}
+#slider figure .ig
+{
+    width: 14.285%;
+    float: left;
+}
+
+@keyframes slider
+{
+    0%
+    {
+        left: 0;
+    }
+    11.67%
+    {
+        left: 0;
+    }
+    16.67%
+    {
+        left: -100%;
+    }
+    28.33%
+    {
+        left: -100%;
+    }
+    33.33%
+    {
+        left: -200%;
+    }
+    45%
+    {
+        left: -200%;
+    }
+    50%
+    {
+        left: -300%;
+    }
+    61.67%
+    {
+        left: -300%;
+    }
+    66.67%
+    {
+        left: -400%;
+    }
+    78.33%
+    {
+        left: -400%;
+    }
+    83.33%
+    {
+        left: -500%;
+    }
+    95%
+    {
+        left: -500%;
+    }
+    100%
+    {
+        left: -600%;
+    }
+}
+
+#credit a
+{
+    text-decoration: none;
+    font-style: italic;
+    color: #091921;
+    border: 1px;
+    border-radius: 50vmin;
+    padding: 2px 15px 12px 14px;
+    background: linear-gradient(45deg,#ff105e,#2238ff);
 }
 
 .container p
@@ -221,8 +313,8 @@ body
     color: #00fff1;
     box-shadow: inset -1px -1px 3px rgba(255,255,255,.1),
                 inset 2px 2px 6px rgba(0,0,0,1);
-    text-shadow: 0 0 5px #00fff1,
-                 0 0 20px #00fff1;
+    text-shadow: 0 0 5px #ff0037,
+                 0 0 20px #ff0037;
 }/*
 .container label input:checked ~ .fa-times
 {
