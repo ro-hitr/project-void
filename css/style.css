@@ -244,6 +244,7 @@ body
 {
     text-decoration: none;
     font-style: italic;
+    font-weight: 500;
     color: #091921;
     border: 1px;
     border-radius: 50vmin;
