@@ -15,9 +15,11 @@
         <!--<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">-->
     </head>
     <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <div class="container">
             <div class="row page-1">
-                <div class="clock col-md-6">
+                <div class="clock col-md-12">
                     <div class="hour">
                         <div class="hr" id="hr"></div>
                     </div>
@@ -29,7 +31,7 @@
                     </div>
                 </div>
             
-                <div class="text col-md-6">
+                <div class="text col-md-12">
                     <h2>This is just a <a href="#"><i>stupid</i></a> website</h2>
                 </div>
             </div>
@@ -37,8 +39,8 @@
                 <figure><center>
                     <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/B_fWVBCDCqb/media/?size=l"></div>
                     <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/B_cDUFCjGi4/media/?size=l"></div>
-                    <div class="ig"><img class="ig-img crop" src="https://www.instagram.com/p/B_aI4P1D6il/media/?size=l"></div>
-                    <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/B_kT95uj4gp/media/?size=l"></div>
+                    <div class="ig"><img class="ig-img crop" src="https://www.instagram.com/p/B_pbWKijOQe/media/?size=l"></div>
+                    <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/CAE_vY8jBfm/media/?size=l"></div>
                     <div class="ig"><img class="ig-img crop" src="https://www.instagram.com/p/B_mvk5ID7Fw/media/?size=l"></div>
                     <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/B_myRiUDKjV/media/?size=l"></div>
                     <div class="ig"><img class="ig-img" src="https://www.instagram.com/p/B_fWVBCDCqb/media/?size=l"></div>
@@ -46,6 +48,14 @@
             </div>
             <div class="row" id="credit">
                 <p>Credits : <a href="https://www.instagram.com/bagloescobar/">@bagloescobar</a></p>
+            </div>
+            <div class="row" id="music">
+                <label>
+                <!--<audio controls>
+                    <source src="images/Lauv BTS - Who.mp3" type="audio/mpeg">
+                </audio>-->
+                <!--<button class="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                </label>-->
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -63,6 +73,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/jquery.js"></script>
         <script type="text/javascript">
             /*Clock*/
             const deg = 6;
@@ -117,16 +128,33 @@
                 });
             });
 
-            /*Bday Date*/
+            /*Bday Date
             d = day.getDate();
             m = day.getMonth();
             if((m==4&&d>=15)||(m>4))
             {
                 alert("Happy birthday Aditi!!");
-            }
+            }*/
+             
+             /*ProgressBar*/
+            /*var height;
+            $(document).ready(function()
+            {
+	            'use strict';
+                var body = document.body,
+                html = document.documentElement;
+
+                height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+            });*//*
+            let progress = document.getElementById('progressbar');
+		    let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset/(totalHeight))*100;
+                progress.style.height = progressHeight + '%';
+            }*/
         </script>
 
-        <script src="js/jquery.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
         <!--<script src="js/mobile.js"></script>-->
         <!--<script src="js/fullpage.min.js"></script>
